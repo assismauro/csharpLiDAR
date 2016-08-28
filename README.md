@@ -14,22 +14,22 @@ This repository contains C# .Net code that can be used to access LiDAR LAS files
 
 **DigitacaoInventario**: application to be used to store and validate tree field data collected in experimental parcels. Its interface is in Portuguese because it was projected to support data acquisition in Amazon, but of course, we can provide different idioms if you wish, just contact me. It uses DevExpress stuff.
 
-Download DigitacaoInventario link: https://mega.nz/#!U4lniYKI
+DigitacaoInventario download link: https://mega.nz/#!U4lniYKI
 Download key: !n2WVbt4R1Lk7lBPb-TI0LWwIJbM2hs-UzoYLoEY2-GQ
 
 **LiDARFileInfo**: an application that access and shows LAS file information, discrete and full waveform. It uses DevExpress stuff.
 
-Download LiDARFileInfo link: https://mega.nz/#!F8dRHRxT
+LiDARFileInfo download link: https://mega.nz/#!F8dRHRxT
 Download key: !UE3TxtL3xcq9Mawf0Rz7xWsBNhRX8vcFgnXbu6Fooc0
 
 **LiDARFileStuff**: contains a class, LiDARFile, that implements full access to discrete and full waveform LAS files, supporting at least 1.2 and 1.3 LAS specification versions. It doesn´t require DevExpress or any other library but .Net ones. The other apps use it.
 
-Download LiDARFileStuff link: https://mega.nz/#!o8lmgLIK
+LiDARFileStuff download link: https://mega.nz/#!o8lmgLIK
 Download key: !UUd83WtSjIRBzXTteOyKEaePZOCdXPsjezyjCoiA1so
 
 **UpdateLASHeader**: it set´s some parameters in a LiDAR file. It doesn´t require DevExpress.
 To check how to use, just run UpdateLASHeaderFiles -h.
 
-Download UpdateLASHeader link: https://mega.nz/#!xtkVnICY
+UpdateLASHeader download link: https://mega.nz/#!xtkVnICY
 Download key: !IUyHsBM5cdwHFSXYMwWHvvC09OkoAv6DwS0pd9nWrH0
  
