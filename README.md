@@ -27,9 +27,9 @@ Download key: !UE3TxtL3xcq9Mawf0Rz7xWsBNhRX8vcFgnXbu6Fooc0
 Download LiDARFileStuff link: https://mega.nz/#!o8lmgLIK
 Download key: !UUd83WtSjIRBzXTteOyKEaePZOCdXPsjezyjCoiA1so
 
-**LiDARGUID**: it set´s some parameters in a LiDAR file. It doesn´t require DevExpress.
-To check how to use, just run LiDARGUID -h.
+**UpdateLASHeader**: it set´s some parameters in a LiDAR file. It doesn´t require DevExpress.
+To check how to use, just run UpdateLASHeaderFiles -h.
 
-Download LiDARGUID link: https://mega.nz/#!po8yhSJI
-Download key: !frg-_ElbRZRvGn45rGM_SH3m0L38BC8Ir9QzsygZefw
+Download UpdateLASHeader link: https://mega.nz/#!xtkVnICY
+Download key: !IUyHsBM5cdwHFSXYMwWHvvC09OkoAv6DwS0pd9nWrH0
  
