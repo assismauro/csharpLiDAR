@@ -7,8 +7,8 @@
     <ProjectGuid>{9941B9BC-1627-45A1-B29A-530D8B39E97E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LiDARGUID</RootNamespace>
-    <AssemblyName>LiDARGUID</AssemblyName>
+    <RootNamespace>UpdateLASReaderFiless</RootNamespace>
+    <AssemblyName>UpdateLASReaderFiles</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
