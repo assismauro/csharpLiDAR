@@ -14,7 +14,7 @@ namespace UpdateLASHeaderFiles
 {
     internal class Program
     {
-        private static readonly HeadingInfo _headingInfo = new HeadingInfo("LiDARGUID", "0.9");
+        private static readonly HeadingInfo _headingInfo = new HeadingInfo("UpdateLASHeader", "0.9");
         private static Program.Options options = new Program.Options();
 
         private static void Main(string[] args)
