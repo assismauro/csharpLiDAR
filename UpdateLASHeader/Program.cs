@@ -1,4 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
+// Decompiled with JetBrains decompiler
 // Type: UpdateLASReaderFiles.Program
 // Assembly: UpdateLASHeaderValues, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 // MVID: B71B2CA7-7A3F-4C08-BD14-0476F7D4B26C
@@ -35,10 +35,10 @@ namespace UpdateLASHeaderFiles
                 Console.WriteLine(string.Format("ERROR: file {0} doesn´t exists", (object)Program.options.InputFileName));
                 Environment.Exit(1);
             }
-            LiDARFile liDarFile = (LiDARFile)null;
+            LiDARFile lidarFile = (LiDARFile)null;
             try
             {
-                liDarFile = new LiDARFile(Program.options.InputFileName);
+                lidarFile = new LiDARFile(Program.options.InputFileName);
             }
             catch (Exception ex)
             {
@@ -46,11 +46,13 @@ namespace UpdateLASHeaderFiles
                 Environment.Exit(2);
             }
             if (Program.options.GUID != null)
-                liDarFile.GUID = !(Program.options.GUID.ToLower() == "generate") ? Program.options.GUID : Guid.NewGuid().ToString();
+                lidarFile.GUID = !(Program.options.GUID.ToLower() == "generate") ? Program.options.GUID : Guid.NewGuid().ToString();
             if ((uint)Program.options.FileSourceID > 0U)
-                liDarFile.FileSourceID = (ushort)Program.options.FileSourceID;
-            liDarFile.Modified = true;
-            liDarFile.Close();
+                lidarFile.FileSourceID = (ushort)Program.options.FileSourceID;
+            if (Program.options.SystemIdentifier != string.Empty)
+                lidarFile.SystemIdentifier = Program.options.SystemIdentifier;
+            lidarFile.Modified = true;
+            lidarFile.Close();
         }
 
         private sealed class Options
@@ -61,11 +63,14 @@ namespace UpdateLASHeaderFiles
             [Option('g', "guid", DefaultValue = "", HelpText = "Set a new GID.")]
             public string GUID { get; set; }
 
-            [Option('d', "forcediscrete", DefaultValue = false, HelpText = "Force FWF file as discrete.")]
-            public bool ForceDiscrete { get; set; }
-
             [Option('s', "filesourceid", DefaultValue = 0, HelpText = "Set a new source id.")]
             public int FileSourceID { get; set; }
+
+            [Option('t', "systemidentifier", DefaultValue = "", HelpText = "System or transformation identifier.")]
+            public string SystemIdentifier { get; set; }
+
+            [Option('d', "forcediscrete", DefaultValue = false, HelpText = "Force FWF file as discrete.")]
+            public bool ForceDiscrete { get; set; }
 
             [ParserState]
             public IParserState LastParserState { get; set; }
